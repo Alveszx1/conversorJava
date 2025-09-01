@@ -15,7 +15,7 @@ public class Calc {
         System.out.println("Moeda de destino: ");
         moedaDestino = leitor.nextLine();
 
-        System.out.println("Quanto custa 1 "+ moedaDestino +" em " +moedaOrigem);
+        System.out.println("Quanto custa 1 "+ moedaDestino +" em " +moedaOrigem+ "?");
         valorDaCotacao = leitor.nextDouble();
 
         calcDados();
@@ -27,7 +27,7 @@ public class Calc {
 
     }
     public void exibirResult(){
-        System.out.println("1 "+moedaOrigem+ " equivale a " +valorDeConversao+" "+moedaDestino);
+        System.out.println("1 "+moedaOrigem+ " equivale a " +valorDeConversao+" "+moedaDestino+ "!");
     }
 
 }
