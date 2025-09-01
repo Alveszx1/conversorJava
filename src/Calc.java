@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Calc {
     String moedaOrigem;
     String moedaDestino;
-    double valorDest;
-    double result;
+    double valorDaCotacao;
+    double valorDeConversao;
 
     public void obterDados(){
         Scanner leitor = new Scanner(System.in);
@@ -16,18 +16,18 @@ public class Calc {
         moedaDestino = leitor.nextLine();
 
         System.out.println("Quanto custa 1 "+ moedaDestino +" em " +moedaOrigem);
-        valorDest = leitor.nextDouble();
+        valorDaCotacao = leitor.nextDouble();
 
         calcDados();
     }
     public void calcDados(){
 
-        result = 1/valorDest;
+        valorDeConversao = 1/valorDaCotacao;
         exibirResult();
 
     }
     public void exibirResult(){
-        System.out.println("1 "+moedaOrigem+ " equivale a " +result+" "+moedaDestino);
+        System.out.println("1 "+moedaOrigem+ " equivale a " +valorDeConversao+" "+moedaDestino);
     }
 
 }
