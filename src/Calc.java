@@ -27,7 +27,8 @@ public class Calc {
 
     }
     public void exibirResult(){
-        System.out.println("1 "+moedaOrigem+ " equivale a " +valorDeConversao+" "+moedaDestino+ "!");
+        String valorConversaoComDoisDecimais = String.format("%.2f", valorDeConversao);
+        System.out.println("1 "+moedaOrigem+ " equivale a " +valorConversaoComDoisDecimais+" "+moedaDestino+ "!");
     }
 
 }
